@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ইক্বরা ইসলামিক মাদরাসা (IIM) | অনলাইন কুরআন শেখার বিশ্বস্ত প্ল্যাটফর্ম</title>
+<meta name="description" content="সহীহ শুদ্ধভাবে কুরআন শিক্ষা কোর্স — ইক্বরা ইসলামিক মাদরাসার সাথে অনলাইনে মাখরাজ, তাজবীদ ও সহীহ তিলাওয়াত শিখুন।">
+<link rel="icon" type="image/png" href="assets/logo/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Hind+Siliguri:wght@400;500;600;700&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- Bootstrap CDN & Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="pattern-veil" aria-hidden="true"></div>
+
+<!-- ===================== HEADER / HERO ===================== -->
+<header class="hero position-relative overflow-hidden text-white pb-5">
+  <nav class="container d-flex align-items-center justify-content-between pt-4 pb-2">
+    <div class="d-flex align-items-center gap-3">
+      <img src="assets/logo/logo.png" alt="ইক্বরা ইসলামিক মাদরাসা লোগো" class="rounded-circle shadow" width="44" height="44">
+      <div class="d-flex flex-column lh-sm">
+        <span class="fw-bold fs-6">ইক্বরা ইসলামিক মাদরাসা</span>
+        <span class="text-white-50 small opacity-75">IIM</span>
+      </div>
+    </div>
+    <button class="btn btn-outline-light rounded-pill px-4 btn-sm" id="topbarCta">রেজিস্ট্রেশন</button>
+  </nav>
+
+  <div class="container py-4">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <span class="badge bg-mint text-dark mb-3 px-3 py-2 rounded-pill fw-semibold">✦ অনলাইন কুরআন শেখার বিশ্বস্ত প্ল্যাটফর্ম ✦</span>
+        <h1 class="display-5 fw-bold text-white mb-3">সহীহ শুদ্ধভাবে<br>কুরআন শিক্ষা কোর্স<br>-শুধুমাত্র নারীদের জন্য</h1>
+        <p class="lead text-white-50 mb-4" style="max-width: 52ch;">সিফাতসহ হরফের সহীহ শুদ্ধ উচ্চারণ, তাজবীদ ও সঠিক উচ্চারণসহ কুরআন তিলাওয়াত শিখুন — ধাপে ধাপে, ওস্তাজাদের বিশেষ তত্ত্বাবধানে, ঘরে বসেই।</p>
+        <div class="d-flex gap-3 flex-wrap mb-4">
+          <button class="btn btn-gradient-primary btn-lg rounded-pill px-4 fw-bold shadow text-white" data-tab-target="registration">রেজিস্ট্রেশন করুন</button>
+          <button class="btn btn-outline-light btn-lg rounded-pill px-4 fw-bold" data-tab-target="course">কোর্স সম্পর্কে জানুন</button>
+        </div>
+        <p class="font-arabic text-mint mb-0">আপনার ইলম অর্জনের যাত্রা বরকতময় হোক।</p>
+      </div>
+
+      <div class="col-lg-5 text-center">
+        <div class="hero-visual position-relative">
+          <div class="glow-orb orb-1"></div>
+          <div class="glow-orb orb-2"></div>
+          <svg class="hero-book img-fluid" viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg">
+            <g class="book-pages">
+              <path d="M150 30 L150 190 C120 165 70 160 40 168 L40 55 C70 40 120 45 150 30 Z" fill="url(#gradLeft)"/>
+              <path d="M150 30 L150 190 C180 165 230 160 260 168 L260 55 C230 40 180 45 150 30 Z" fill="url(#gradRight)"/>
+            </g>
+            <defs>
+              <linearGradient id="gradLeft" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ffffff"/>
+                <stop offset="100%" stop-color="#d7fbf7"/>
+              </linearGradient>
+              <linearGradient id="gradRight" x1="1" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#ffffff"/>
+                <stop offset="100%" stop-color="#c9f6ff"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="star-divider position-relative text-white" aria-hidden="true">
+    <svg viewBox="0 0 800 40" preserveAspectRatio="none"><path d="M0 40 L800 40 L800 0 C 600 30, 200 30, 0 0 Z" fill="#ffffff"/></svg>
+  </div>
+</header>
+
+<!-- ===================== TAB NAV ===================== -->
+<div class="sticky-top bg-white border-bottom shadow-sm z-3">
+  <div class="container max-w-760">
+    <ul class="nav nav-pills nav-justified flex-nowrap overflow-x-auto py-2 gap-2" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link rounded-pill fw-bold active d-flex align-items-center justify-content-center gap-2" data-tab="course" role="tab">
+          <i class="bi bi-book-fill"></i> <span class="d-inline">লেআউট</span>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link rounded-pill fw-bold d-flex align-items-center justify-content-center gap-2" data-tab="hadiya" role="tab">
+          <i class="bi bi-gift-fill"></i> <span class="d-inline">হাদিয়া</span>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link rounded-pill fw-bold d-flex align-items-center justify-content-center gap-2" data-tab="registration" role="tab">
+          <i class="bi bi-pencil-square"></i> <span class="d-inline">রেজিস্ট্রেশন</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<main class="container my-4">
+
+  <!-- ===================== TAB 1: COURSE LAYOUT ===================== -->
+  <section class="tab-panel active" id="course" role="tabpanel">
+
+    <div class="text-center mx-auto mb-5 max-w-780">
+  <span class="badge bg-tint border text-primary rounded-pill px-3 py-2 fw-bold mb-2">কোর্স লেআউট</span>
+  <h2 class="display-6 fw-bold">সহীহ শুদ্ধভাবে কুরআন শিক্ষা কোর্স</h2>
+  <p class="text-muted lead mt-2">ইং শা আল্লাহ্‌, এই কোর্সের মাধ্যমে আপনি প্রাথমিক আরবি হরফ পরিচিতি থেকে শুরু করে সহীহ তিলাওয়াত পর্যন্ত ধাপে ধাপে দক্ষতা অর্জন করবেন — অভিজ্ঞ ওস্তাজাদের ব্যক্তিগত তত্ত্বাবধানে।</p>
+  
+  <!-- নতুন সংযোজিত অংশ -->
+  <div class="d-inline-flex align-items-center gap-2 bg-gradient-primary text-white border border-primary-subtle rounded-pill px-4 py-2 mt-3 shadow-sm">
+    <i class="bi bi-calendar-check-fill"></i>
+    <span class="fw-bold fs-6">দ্বিতীয় ব্যাচ এর ফ্রী ক্লাস শুরু: ১৫ সেপ্টেম্বর ২০২৬</span>
+  </div>
+</div>
+
+    <!-- What you'll learn -->
+
+    <div class="row g-3 reveal mb-5">
+      <div class="col-md-4"><div class="card h-100 border p-3 rounded-4 bg-grad-soft"><span class="learn-num">০১</span><h3 class="h6 fw-semibold mb-0">আরবি হরফের পরিচিতি</h3></div></div>
+      <div class="col-md-4"><div class="card h-100 border p-3 rounded-4 bg-grad-soft"><span class="learn-num">০২</span><h3 class="h6 fw-semibold mb-0">মাখরাজ (হরফের সঠিক উচ্চারণস্থান) পরিচিতি</h3></div></div>
+      <div class="col-md-4"><div class="card h-100 border p-3 rounded-4 bg-grad-soft"><span class="learn-num">০৩</span><h3 class="h6 fw-semibold mb-0">হরফের সঠিক উচ্চারণের নিয়ম ও সিফাত</h3></div></div>
+      <div class="col-md-4"><div class="card h-100 border p-3 rounded-4 bg-grad-soft"><span class="learn-num">০৪</span><h3 class="h6 fw-semibold mb-0">মুরাক্কাব অবস্থায় ২৯টি হরফের বিভিন্ন রূপ</h3></div></div>
+      <div class="col-md-4"><div class="card h-100 border p-3 rounded-4 bg-grad-soft"><span class="learn-num">০৫</span><h3 class="h6 fw-semibold mb-0">হারাকাতের পরিচয়</h3></div></div>
+      <div class="col-md-4"><div class="card h-100 border p-3 rounded-4 bg-grad-soft"><span class="learn-num">০৬</span><h3 class="h6 fw-semibold mb-0">তানউইনের পরিচয়</h3></div></div>
+      <div class="col-md-4"><div class="card h-100 border p-3 rounded-4 bg-grad-soft"><span class="learn-num">০৭</span><h3 class="h6 fw-semibold mb-0">সাকিন (সুকুন/জযম)-এর পরিচয়</h3></div></div>
+      <div class="col-md-4"><div class="card h-100 border p-3 rounded-4 bg-grad-soft"><span class="learn-num">০৮</span><h3 class="h6 fw-semibold mb-0">তাশদীদের পরিচয়</h3></div></div>
+      <div class="col-md-4"><div class="card h-100 border p-3 rounded-4 bg-grad-soft"><span class="learn-num">০৯</span><h3 class="h6 fw-semibold mb-0">তাজবীদের নিয়মাবলি</h3></div></div>
+      <div class="col-md-4"><div class="card h-100 border p-3 rounded-4 bg-grad-soft"><span class="learn-num">১০</span><h3 class="h6 fw-semibold mb-0">৩০তম পারা থেকে কুরআন রিডিং অনুশীলন</h3></div></div>
+      <div class="col-md-8"><div class="card h-100 border p-3 rounded-4 bg-grad-soft"><span class="learn-num">১১</span><h3 class="h6 fw-semibold mb-0">সূরা ফীল থেকে সূরা নাস পর্যন্ত অর্থসহ মুখস্থ</h3></div></div>
+    </div>
+
+    <div class="free-class-panel mb-4 reveal">
+      <div class="free-class-intro">
+        <span class="free-class-icon" aria-hidden="true"><i class="bi bi-stars"></i></span>
+        <div>
+          <span class="free-class-kicker">ফ্রি ক্লাস</span>
+          <h3 class="h4 fw-bold mb-2">শুদ্ধ কুরআন শিক্ষার প্রথম ধাপ</h3>
+          <p class="mb-0 small">প্রাথমিক ক্লাসগুলোতে কুরআন পড়ার জন্য প্রয়োজনীয় মূল বিষয়গুলো সহজভাবে শেখানো হবে।</p>
+        </div>
+      </div>
+      <div class="free-class-topics" aria-label="ফ্রি ক্লাসে শেখানো বিষয়সমূহ">
+        <div class="free-class-topic">
+          <span class="free-class-topic-number">০১</span>
+          <span>আরবি হরফের পরিচিতি</span>
+        </div>
+        <div class="free-class-topic">
+          <span class="free-class-topic-number">০২</span>
+          <span>মাখরাজ (হরফের সঠিক উচ্চারণস্থান) পরিচিতি</span>
+        </div>
+        <div class="free-class-topic">
+          <span class="free-class-topic-number">০৩</span>
+          <span>হরফের সঠিক উচ্চারণের নিয়ম ও সিফাত</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Special features -->
+    <div class="text-center mx-auto mb-4 mt-5 max-w-780">
+      <span class="badge bg-tint border text-primary rounded-pill px-3 py-2 fw-bold mb-2">বিশেষ বৈশিষ্ট্য</span>
+      <h2 class="h3 fw-bold">কেন এই কোর্সটি আলাদা</h2>
+    </div>
+
+    <div class="row g-4 reveal mb-5">
+  <div class="col-md-4">
+    <div class="card h-100 text-center p-4 rounded-4 shadow-sm border">
+      <div class="feature-icon mx-auto mb-3"><i class="bi bi-person-heart fs-3"></i></div>
+      <h3 class="h6 fw-bold">নারী শিক্ষিকা (ওস্তাজা) দ্বারা পরিচালিত</h3>
+      <p class="small text-muted mb-0">শুধু মাত্র নারীদের কোর্স হওয়ায় অভিজ্ঞ নারী শিক্ষিকা (ওস্তাজা) দ্বারা পাঠদান করা হয়।</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100 text-center p-4 rounded-4 shadow-sm border">
+      <div class="feature-icon mx-auto mb-3"><i class="bi bi-magic"></i></div>
+      <h3 class="h6 fw-bold">সহজ ও কার্যকর পদ্ধতি</h3>
+      <p class="small text-muted mb-0">ধাপে ধাপে সহজবোধ্য পদ্ধতিতে পাঠদান করা হয়, যাতে একদম নতুন শিক্ষার্থীও সহজে বুঝতে পারেন।</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100 text-center p-4 rounded-4 shadow-sm border">
+      <div class="feature-icon mx-auto mb-3"><i class="bi bi-headphones"></i></div>
+      <h3 class="h6 fw-bold">ব্যক্তিগত তিলাওয়াত সংশোধন</h3>
+      <p class="small text-muted mb-0">প্রতিটি শিক্ষার্থীর তিলাওয়াত মনোযোগ দিয়ে শুনে ব্যক্তিগতভাবে ভুল সংশোধন করা হয়।</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100 text-center p-4 rounded-4 shadow-sm border">
+      <div class="feature-icon mx-auto mb-3"><i class="bi bi-moon-stars-fill"></i></div>
+      <h3 class="h6 fw-bold">সাপ্তাহিক তালিম</h3>
+      <p class="small text-muted mb-0">সপ্তাহে একদিন ইসলামের মৌলিক বিষয় নিয়ে বিশেষ তালিমের ব্যবস্থা রয়েছে।</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100 text-center p-4 rounded-4 shadow-sm border">
+      <div class="feature-icon mx-auto mb-3"><i class="bi bi-bar-chart-fill"></i></div>
+      <h3 class="h6 fw-bold">মাসিক মূল্যায়ন</h3>
+      <p class="small text-muted mb-0">প্রতি মাসে ১টি মূল্যায়ন পরীক্ষার মাধ্যমে শিক্ষার্থীর অগ্রগতি যাচাই করা হয়।</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100 text-center p-4 rounded-4 shadow-sm border">
+      <div class="feature-icon mx-auto mb-3"><i class="bi bi-check-circle-fill"></i></div>
+      <h3 class="h6 fw-bold">সার্বিক মূল্যায়ন পদ্ধতি</h3>
+      <p class="small text-muted mb-0">উপস্থিতি, মৌখিক পরীক্ষা, কুইজ ও আচরণের ভিত্তিতে প্রতিটি শিক্ষার্থীর অগ্রগতি নিয়মিত মূল্যায়ন করা হয়।</p>
+    </div>
+  </div>
+</div>
+
+    <!-- Class guidelines -->
+    <div class="text-center mx-auto mb-4 mt-5 max-w-780">
+  <span class="badge bg-tint border text-primary rounded-pill px-3 py-2 fw-bold mb-2">নির্দেশনা</span>
+  <h2 class="h3 fw-bold">ক্লাসের নিয়মাবলী</h2>
+</div>
+
+<!-- সাপ্তাহিক ক্লাসের ধরণ -->
+<div class="row g-3 reveal mb-4">
+  <div class="col-md-4">
+    <div class="d-flex align-items-center gap-3 p-3 bg-tint border rounded-4">
+      <i class="bi bi-book-half fs-4 text-primary"></i>
+      <p class="mb-0 small fw-semibold">সপ্তাহে ৩ দিন পড়া প্রদান (রেকর্ডিং প্রদান করা হবে)</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="d-flex align-items-center gap-3 p-3 bg-tint border rounded-4">
+      <i class="bi bi-check2-square fs-4 text-primary"></i>
+      <p class="mb-0 small fw-semibold">সপ্তাহে ৩ দিন পড়া আদায়</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="d-flex align-items-center gap-3 p-3 bg-tint border rounded-4">
+      <i class="bi bi-people-fill fs-4 text-primary"></i>
+      <p class="mb-0 small fw-semibold">সপ্তাহে ১ দিন তালিম</p>
+    </div>
+  </div>
+</div>
+
+<div class="text-center mx-auto mb-4 mt-4 max-w-780">
+  <h2 class="h3 fw-bold">ক্লাসে অংশগ্রহণের জন্য অনুরোধ</h2>
+</div>
+
+<!-- লাইভ ক্লাসের প্রস্তুতি -->
+<div class="row g-3 reveal mb-4">
+  <div class="col-md-6">
+    <div class="d-flex align-items-center gap-3 p-3 bg-tint border rounded-4">
+      <i class="bi bi-alarm-fill fs-4 text-primary"></i>
+      <p class="mb-0 small fw-semibold">নির্ধারিত সময়ের ৫–১০ মিনিট আগে অনলাইনে উপস্থিত থাকবেন।</p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="d-flex align-items-center gap-3 p-3 bg-tint border rounded-4">
+      <i class="bi bi-journal-text fs-4 text-primary"></i>
+      <p class="mb-0 small fw-semibold">খাতা ও কলম সঙ্গে রাখবেন।</p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="d-flex align-items-center gap-3 p-3 bg-tint border rounded-4">
+      <i class="bi bi-volume-mute-fill fs-4 text-primary"></i>
+      <p class="mb-0 small fw-semibold">শান্ত পরিবেশ থেকে ক্লাসে অংশগ্রহণ করবেন।</p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="d-flex align-items-center gap-3 p-3 bg-tint border rounded-4">
+      <i class="bi bi-arrow-repeat fs-4 text-primary"></i>
+      <p class="mb-0 small fw-semibold">নিয়মিত অনুশীলন করবেন এবং প্রয়োজনে প্রশ্ন করবেন।</p>
+    </div>
+  </div>
+</div>
+
+<div class="alert alert-dark bg-dark-blue text-white rounded-4 p-4 reveal">
+  <p class="mb-0 small"><i class="bi bi-megaphone-fill me-2 text-mint"></i> ক্লাস Google Meet-এ অনুষ্ঠিত হবে। ক্লাসের সময়সুচি, ক্লাস শুরু হওয়ার ৫ মিনিট আগে মিটিং লিংক ও অন্যান্য গুরুত্বপূর্ণ নির্দেশনা গ্রুপেই জানিয়ে দেওয়া হবে — তাই রেজিস্ট্রেশনের পর নিয়মিত গ্রুপে নজর রাখুন।</p>
+</div>
+
+<div class="text-center p-5 rounded-5 bg-gradient-primary text-white reveal mt-5">
+  <h3 class="h4 fw-bold mb-3">ইনশাআল্লাহ, আজই আপনার কুরআন শেখার যাত্রা শুরু করুন</h3>
+  <button class="btn btn-mint rounded-pill px-4 py-2 fw-bold" data-tab-target="registration">এখনই রেজিস্ট্রেশন করুন</button>
+</div>
+  </section>
+
+  <!-- ===================== TAB 2: HADIYA ===================== -->
+  <section class="tab-panel" id="hadiya" role="tabpanel">
+    <div class="text-center mx-auto mb-5 max-w-780">
+      <span class="badge bg-tint border text-primary rounded-pill px-3 py-2 fw-bold mb-2">হাদিয়া</span>
+      <h2 class="display-6 fw-bold">কোর্সের হাদিয়া সম্পর্কিত তথ্য</h2>
+      <p class="text-muted lead mt-2">ইক্বরা ইসলামিক মাদরাসায় হাদিয়ার কোনো নির্ধারিত পরিমাণ নেই। প্রতিটি শিক্ষার্থী তার নিজের সামর্থ্য অনুযায়ী হাদিয়া প্রদান করবেন — ইলম অর্জনের নিয়তটাই এখানে মুখ্য বিষয়।</p>
+    </div>
+
+    <div class="row g-4 reveal mb-4">
+      <div class="col-md-6">
+        <div class="card h-100 p-4 rounded-5 bg-gradient-primary text-white border-0 shadow">
+          <span class="badge bg-white-20 rounded-pill mb-3 align-self-start px-3 py-2 fw-bold"><i class="bi bi-box-seam-fill me-1"></i> ভর্তি হাদিয়া</span>
+          <h3 class="h2 fw-bold mb-3">নিজ সামর্থ্য অনুযায়ী</h3>
+          <ul class="lh-lg small mb-0 ps-3">
+            <li>ভর্তির সময় একবার প্রদান করতে হবে</li>
+            <li>নির্দিষ্ট কোনো অংক বাধ্যতামূলক নয়</li>
+            <li>শিক্ষার্থী নিজে যা সামর্থ্য মনে করেন তা-ই প্রদান করবেন</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 p-4 rounded-5 bg-white border shadow-sm">
+          <span class="badge bg-tint text-primary border rounded-pill mb-3 align-self-start px-3 py-2 fw-bold"><i class="bi bi-calendar-check-fill me-1"></i> মাসিক হাদিয়া</span>
+          <h3 class="h2 fw-bold text-dark mb-3">নিজ সামর্থ্য অনুযায়ী</h3>
+          <ul class="lh-lg text-muted small mb-0 ps-3">
+            <li>প্রতি মাসে ১০ তারিখের মধ্যে প্রদান করতে হবে</li>
+            <li>পরিমাণ শিক্ষার্থীর নিজের সামর্থ্যের উপর নির্ভরশীল</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-dark bg-dark-blue text-white rounded-4 p-4 reveal">
+      <p class="mb-0 small"><i class="bi bi-lightbulb-fill me-2 text-warning"></i> মাসিক হাদিয়া প্রতি মাসের ১০ তারিখের মধ্যে পরিশোধ করার অনুরোধ রইলো। পরিশোধ পদ্ধতি রেজিস্ট্রেশন সম্পন্ন হওয়ার পর গ্রুপে জানিয়ে দেওয়া হবে।</p>
+    </div>
+
+    <div class="text-center p-5 rounded-5 bg-gradient-primary text-white reveal mt-5">
+      <h3 class="h4 fw-bold mb-3">হাদিয়া নিয়ে দ্বিধায় থাকবেন না — ইলম অর্জনের নিয়তটাই সবচেয়ে গুরুত্বপূর্ণ</h3>
+      <button class="btn btn-mint rounded-pill px-4 py-2 fw-bold" data-tab-target="registration">রেজিস্ট্রেশন করুন</button>
+    </div>
+  </section>
+
+  <!-- ===================== TAB 3: REGISTRATION ===================== -->
+  <section class="tab-panel" id="registration" role="tabpanel">
+    <div class="text-center mx-auto mb-4 max-w-780">
+      <span class="badge bg-tint border text-primary rounded-pill px-3 py-2 fw-bold mb-2">রেজিস্ট্রেশন</span>
+      <h2 class="display-6 fw-bold">কোর্সের ফ্রী ক্লাসে যুক্ত হতে ফরমটি পূরণ করুন</h2>
+      <p class="text-muted lead mt-2">সঠিক তথ্য দিয়ে নিচের ফরমটি পূরণ করুন। WhatsApp নম্বর অথবা Facebook আইডি — এই দুইটির যেকোনো একটি অবশ্যই দিতে হবে।</p>
+    </div>
+
+    <!-- Target Iframe for Google Form Silent Submit -->
+    <iframe name="gform_iframe" id="gform_iframe" style="display:none;"></iframe>
+
+    <!-- 
+       DYNAMIC FORM CONFIGURATION:
+       ভবিষ্যতে অন্য ফর্ম এড করার নিয়ম:
+       ১. class="custom-gform" ব্যবহার করবেন।
+       ২. data-success-id="আপনার_সাকসেস_পপআপ_আইডি" দিয়ে দিবেন।
+       ৩. action এ নতুন ফর্মের গুগল ফর্মের লিংক দিয়ে দিন।
+    -->
+    <form id="regForm" class="custom-gform reveal bg-white p-4 p-md-5 rounded-5 border shadow-sm mx-auto max-w-600" 
+          method="POST" 
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSefv2uyoAbhR_M18mUq7Cy7KYmoQYzQYFJn2Gv591kcdWX7lg/formResponse" 
+          target="gform_iframe" 
+          data-success-id="successOverlay" 
+          novalidate>
+
+      <div class="mb-3">
+        <label for="fullName" class="form-label fw-bold small">আপনার পূর্ণ নাম <span class="text-danger">*</span></label>
+        <input type="text" class="form-control rounded-3 p-3 bg-tint" id="fullName" name="entry.1967533997" placeholder="যেমনঃ মোহাম্মদ আব্দুল্লাহ" autocomplete="name">
+        <span class="error-msg text-danger small mt-1 d-block" id="err-fullName"></span>
+      </div>
+
+      <div class="mb-3">
+        <label for="phone" class="form-label fw-bold small">ফোন নাম্বার <span class="text-danger">*</span></label>
+        <input type="tel" class="form-control rounded-3 p-3 bg-tint" id="phone" name="entry.1259010390" placeholder="01XXXXXXXXX" autocomplete="tel" inputmode="numeric">
+        <span class="error-msg text-danger small mt-1 d-block" id="err-phone"></span>
+      </div>
+
+      <div class="mb-3">
+        <label for="whatsapp" class="form-label fw-bold small">WhatsApp নম্বর</label>
+        <input type="tel" class="form-control rounded-3 p-3 bg-tint" id="whatsapp" name="entry.128637294" placeholder="01XXXXXXXXX (ঐচ্ছিক)" autocomplete="tel" inputmode="numeric">
+        <span class="error-msg text-danger small mt-1 d-block" id="err-whatsapp"></span>
+      </div>
+
+      <div class="mb-3">
+        <label for="facebook" class="form-label fw-bold small">Facebook আইডি (লিংক)</label>
+        <input type="text" class="form-control rounded-3 p-3 bg-tint" id="facebook" name="entry.1610326951" placeholder="https://www.facebook.com/yourid (ঐচ্ছিক)" autocomplete="off">
+        <span class="error-msg text-danger small mt-1 d-block" id="err-facebook"></span>
+      </div>
+
+      <div class="contact-hint alert alert-light border border-dashed rounded-3 p-2 small text-muted mb-4" id="contactHint">
+        উপরের দুইটি ফিল্ডের (WhatsApp / Facebook) যেকোনো একটি পূরণ করা আবশ্যক।
+      </div>
+
+      <div class="mb-4">
+        <label class="form-label fw-bold small d-block mb-2">বর্তমানে কুরআন শিখার জন্য কোন প্রতিষ্ঠানে যুক্ত আছেন কি? <span class="text-danger">*</span></label>
+        <div class="d-flex gap-2 flex-wrap">
+          <label class="btn btn-outline-secondary rounded-pill flex-fill py-2 px-3 small d-flex align-items-center justify-content-center gap-2">
+            <input type="radio" name="entry.1660800759" value="হ্যাঁ, যুক্ত আছি" class="form-check-input m-0">
+            <span>হ্যাঁ, যুক্ত আছি</span>
+          </label>
+          <label class="btn btn-outline-secondary rounded-pill flex-fill py-2 px-3 small d-flex align-items-center justify-content-center gap-2">
+            <input type="radio" name="entry.1660800759" value="না, যুক্ত নেই" class="form-check-input m-0">
+            <span>না, যুক্ত নেই</span>
+          </label>
+        </div>
+        <span class="error-msg text-danger small mt-1 d-block" id="err-institution"></span>
+      </div>
+
+      <!-- Hidden referrer field -->
+      <input type="hidden" id="referer" name="entry.1145358239" value="">
+
+      <!-- Hidden auto-generated unique registration ID -->
+      <input type="hidden" id="registrationId" name="entry.875019488" value="">
+
+      <button type="submit" class="btn btn-gradient-primary btn-lg w-100 rounded-pill py-3 fw-bold text-white shadow-sm btn-iim-submit" id="submitBtn">
+        <span class="btn-label">রেজিস্ট্রেশন সম্পন্ন করুন</span>
+        <span class="spinner-border spinner-border-sm btn-spinner ms-2 d-none" role="status" aria-hidden="true"></span>
+      </button>
+
+      <p class="form-footnote text-center text-muted small mt-3 mb-0">সাবমিট করার মাধ্যমে আপনি নিশ্চিত করছেন যে উপরের তথ্যগুলো সঠিক ও সত্য।</p>
+    </form>
+
+    <!-- Success overlay -->
+    <div class="success-overlay" id="successOverlay" aria-modal="true" role="dialog">
+  <div class="card p-4 rounded-5 text-center shadow-lg border-0 max-w-380 mx-auto">
+    <div class="success-check mx-auto mb-3"><i class="bi bi-check-lg"></i></div>
+    <h3 class="h5 fw-bold mb-2">জাযাকাল্লাহু খাইরান!</h3>
+    <p class="small text-muted mb-4">আপনার রেজিস্ট্রেশন সফলভাবে সম্পন্ন হয়েছে। ক্লাসের সময়সূচি ও লিংক পেতে নিচের গ্রুপগুলোতে যুক্ত হন।</p>
+
+    <div class="p-3 bg-tint border border-dashed rounded-4 mb-3">
+      <span class="small fw-bold text-primary d-block mb-1"><i class="bi bi-shield-lock-fill me-1"></i> আপনার রেজিস্ট্রেশন আইডি</span>
+      <span class="h4 fw-bold text-dark font-display mb-0 d-block text-break" id="regIdDisplay"></span>
+    </div>
+    <p class="small text-danger bg-danger-subtle p-2 rounded-3 mb-3"><i class="bi bi-exclamation-triangle-fill me-1"></i> এই আইডিটি যত্ন সহকারে সংরক্ষণ করুন — পরবর্তীতে যোগাযোগ ও তথ্য যাচাইয়ের জন্য এটি প্রয়োজন হবে।</p>
+
+    <div class="d-flex flex-column gap-2 mb-3">
+      <a href="https://web.facebook.com/groups/iqraislamicmadrasa" target="_blank" class="btn btn-primary rounded-pill py-2 fw-bold w-100 d-flex align-items-center justify-content-center gap-2">
+        <i class="bi bi-facebook fs-5"></i> ফেসবুক গ্রুপে যুক্ত হন
+      </a>
+      <a href="https://chat.whatsapp.com/GaFg7D8AvKr2Xb6dboQhWd" target="_blank" class="btn btn-success rounded-pill py-2 fw-bold w-100 d-flex align-items-center justify-content-center gap-2">
+        <i class="bi bi-whatsapp fs-5"></i> হোয়াটসঅ্যাপ গ্রুপে যুক্ত হন
+      </a>
+    </div>
+
+    <button class="btn btn-gradient-primary rounded-pill py-2 fw-bold text-white w-100" id="closeSuccess">ঠিক আছে</button>
+  </div>
+</div>
+  </section>
+
+</main>
+
+<footer class="bg-dark-blue text-white mt-5">
+  <div class="container py-4 text-center d-flex flex-column align-items-center gap-3">
+    <div class="d-flex align-items-center gap-2">
+      <img src="assets/logo/logo.png" alt="IIM লোগো" class="rounded-circle" width="38" height="38">
+      <div class="text-start">
+        <p class="fw-bold mb-0 lh-1">ইক্বরা ইসলামিক মাদরাসা</p>
+        <small class="text-white-50">অনলাইন কুরআন শেখার বিশ্বস্ত প্ল্যাটফর্ম</small>
+      </div>
+    </div>
+    <p class="font-arabic text-mint mb-0">اَللّٰهُمَّ عَلِّمْنَا مَا يَنْفَعُنَا وَانْفَعْنَا بِمَا عَلَّمْتَنَا</p>
+    <p class="small text-white-50 mb-0">© <span id="year"></span> ইক্বরা ইসলামিক মাদরাসা (IIM). সর্বস্বত্ব সংরক্ষিত।</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

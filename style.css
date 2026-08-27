@@ -1,0 +1,212 @@
+/* =========================================================
+   ইক্বরা ইসলামিক মাদরাসা (IIM) — Light Minimal Overrides
+   (Main layout handled via Bootstrap 5)
+   ========================================================= */
+:root{
+  --deep:   #16668f;
+  --deep-2: #0d4a68;
+  --mint:   #0ffac8;
+  --cyan:   #0fdefa;
+  --white:  #ffffff;
+  --ink:    #0b2e40;
+  --tint:   #eefcfb;
+  --line:   #cdeef0;
+
+  --grad-brand: linear-gradient(120deg, var(--deep) 0%, #1483ab 45%, var(--cyan) 78%, var(--mint) 100%);
+  --grad-soft:  linear-gradient(160deg, var(--tint) 0%, #ffffff 60%);
+  --grad-btn:   linear-gradient(95deg, var(--deep) 0%, #1590b8 60%, var(--cyan) 130%);
+
+  --font-display: 'Tiro Bangla', 'Noto Serif Bengali', serif;
+  --font-body: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+  --font-arabic: 'Amiri', serif;
+}
+
+body{
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-display { font-family: var(--font-display); }
+.font-arabic { font-family: var(--font-arabic); }
+
+/* Max-width Utility Helpers */
+.max-w-600 { max-width: 600px; }
+.max-w-760 { max-width: 760px; }
+.max-w-780 { max-width: 780px; }
+.max-w-380 { max-width: 380px; }
+
+/* Custom Backgrounds & Buttons */
+.bg-mint { background-color: var(--mint) !important; }
+.bg-tint { background-color: var(--tint) !important; }
+.bg-dark-blue { background-color: var(--deep-2) !important; }
+.bg-grad-soft { background: var(--grad-soft); }
+.bg-gradient-primary { background: var(--grad-brand); }
+.bg-white-20 { background: rgba(255, 255, 255, 0.2); }
+.text-mint { color: var(--mint) !important; }
+.text-deep { color: var(--deep) !important; } 
+.text-white { color: var(--white) !important; }
+
+.btn-gradient-primary {
+  background: var(--grad-btn);
+  border: none;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.btn-gradient-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px rgba(15,222,250,.5);
+}
+.btn-mint {
+  background: var(--mint);
+  color: var(--ink);
+  border: none;
+}
+.btn-mint:hover { background: #00e0b3; color: var(--ink); }
+
+/* Background Pattern Veil */
+.pattern-veil{
+  position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: .05;
+  background-image: radial-gradient(circle at 1px 1px, var(--deep) 1.4px, transparent 1.5px);
+  background-size: 26px 26px;
+}
+
+/* Hero Special Details */
+.hero { background: var(--grad-brand); }
+.hero-visual{ position: relative; height: 240px; display: flex; align-items: center; justify-content: center; }
+.hero-book{ width: 200px; filter: drop-shadow(0 18px 26px rgba(0,0,0,.28)); animation: floatBook 5s ease-in-out infinite; }
+@keyframes floatBook{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-12px);} }
+
+.glow-orb{ position: absolute; border-radius: 50%; filter: blur(30px); opacity: .55; }
+.orb-1{ width: 160px; height: 160px; background: var(--mint); top: -10px; left: 10%; }
+.orb-2{ width: 130px; height: 130px; background: var(--cyan); bottom: 0; right: 8%; }
+
+.star-divider svg { width: 100%; height: 34px; display: block; }
+
+/* Custom Tabs active style */
+.nav-pills .nav-link { color: var(--ink); }
+.nav-pills .nav-link.active {
+  background: var(--grad-btn);
+  color: #fff;
+  box-shadow: 0 8px 18px -8px rgba(15,222,250,.55);
+}
+
+/* Feature & Learn Card Styling */
+.learn-num {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--cyan);
+  -webkit-text-stroke: 1px var(--deep);
+  font-weight: 700;
+}
+.feature-icon {
+  width: 56px; height: 56px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  background: var(--grad-brand);
+  font-size: 1.5rem; color: #fff;
+}
+
+/* Free class highlight */
+.free-class-panel {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(220px, .85fr) minmax(0, 1.5fr);
+  gap: 28px;
+  align-items: center;
+  overflow: hidden;
+  padding: 24px;
+  border: 1px solid rgba(20, 131, 171, .18);
+  border-radius: 24px;
+  background: linear-gradient(115deg, #f0fffc 0%, #ffffff 52%, #effcff 100%);
+  box-shadow: 0 14px 30px -22px rgba(13, 74, 104, .55);
+}
+.free-class-panel::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  right: -58px;
+  top: -68px;
+  border-radius: 50%;
+  background: rgba(15, 250, 200, .15);
+}
+.free-class-intro,
+.free-class-topic { position: relative; z-index: 1; }
+.free-class-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.free-class-icon {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  color: var(--deep-2);
+  background: var(--mint);
+  font-size: 1.25rem;
+  box-shadow: 0 8px 16px -10px var(--deep);
+}
+.free-class-kicker {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--deep);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+.free-class-topics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.free-class-topic {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 112px;
+  padding: 15px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .78);
+  color: var(--ink);
+  font-size: .9rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+.free-class-topic-number {
+  color: var(--deep);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+@media (max-width: 767.98px) {
+  .free-class-panel { grid-template-columns: 1fr; gap: 20px; padding: 20px; }
+  .free-class-topics { grid-template-columns: 1fr; }
+  .free-class-topic { min-height: auto; flex-direction: row; align-items: center; gap: 12px; }
+}
+
+/* Scroll Animation */
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.in-view { opacity: 1; transform: translateY(0); }
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; animation: panelFade .45s ease; }
+@keyframes panelFade { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Success Overlay */
+.success-overlay {
+  display: none; position: fixed; inset: 0; z-index: 1050;
+  background: rgba(11,46,64,.6); align-items: center; justify-content: center;
+  padding: 20px; backdrop-filter: blur(4px);
+}
+.success-overlay.show { display: flex; animation: panelFade .3s ease; }
+.success-check {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: var(--grad-brand); color: #fff; font-size: 1.8rem;
+  display: flex; align-items: center; justify-content: center;
+}
